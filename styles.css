@@ -74,6 +74,11 @@ li i:hover {
     padding-right: 0.5rem;
 }
 
+#navbar ul li {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
 
 
 li a,
@@ -109,13 +114,14 @@ li i {
 #goBackWelcome {
     width: 40px;
     height: 40px;
-    background-color: var(--main-white);
+    background-color: var(--main-gray);
     position: fixed;
     right: 70px;
     bottom: 75px;
     border-radius: 50%;
     transition: all 0.5 ease-in-out;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
     z-index: 10;
 }
 
@@ -131,6 +137,11 @@ li i {
     align-items: center;
     transition: all 0.5 ease-in-out;
     color: var(--main-darkgray);
+}
+
+#goBackWelcome:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .no-visible {
@@ -587,6 +598,21 @@ html.dark-mode footer {
     filter: invert(100%);
 }
 
+
+@media (prefers-color-scheme: dark) {
+    html.dark-mode {
+        filter: invert(100%);
+    }
+    
+    html.dark-mode img, 
+    html.dark-mode .technologies .nivel,
+    html.dark-mode #contact,
+    html.dark-mode #welcome-section,
+    html.dark-mode footer {
+        filter: invert(100%);
+    }
+    
+}
 
 @media only screen and (max-width: 1180px) {
 
