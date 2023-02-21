@@ -4,6 +4,7 @@
     --main-red: #be3144;
     --main-darkred: #b85901;
     --main-darkgray: #303841;
+    --main-lightgray: #696a6b;
     --font-poppins: 'Poppins', sans-serif;
     --main-projects-blue: #212736;
     --main-lineargray: linear-gradient(62deg,
@@ -105,6 +106,45 @@ li i {
     transform: scale(1.5);
 }
 
+#goBackWelcome {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-white);
+    position: fixed;
+    right: 70px;
+    bottom: 75px;
+    border-radius: 50%;
+    transition: all 0.5 ease-in-out;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#goBackWelcome div {
+    transition: all 0.5 ease-in-out;
+    background-color: var(--main-gray);
+}
+
+#goBackWelcome i {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5 ease-in-out;
+    color: var(--main-darkgray);
+}
+
+.no-visible {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(200%);
+    transition: all 0.8s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 
 #welcome-section {
@@ -152,13 +192,20 @@ h1 {
     right: 5vw;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    outline: 1px solid var(--main-gray);
+    outline-offset: 6.5px;
+    border-radius: 5px;
+}
+
+#welcome-section button i.dark-mode{
+    color: var(--main-lightgray);
+    outline: 1px solid var(--main-lightgray);
 }
 
 #welcome-section button div.dark-mode {
     width: 34px;
     height: 4.5px;
-    background-color: var(--main-gray);
-    border: 1px solid var(--main-darkgray);
+    background-color: var(--main-lightgray);
     position: absolute;
     top: 9.5px;
     right: -8.5px;
@@ -539,7 +586,6 @@ html.dark-mode #welcome-section,
 html.dark-mode footer {
     filter: invert(100%);
 }
-
 
 
 @media only screen and (max-width: 1180px) {

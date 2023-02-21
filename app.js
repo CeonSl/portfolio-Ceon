@@ -1,3 +1,4 @@
+// All classes
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -13,9 +14,33 @@ const hiddenElements = document.querySelectorAll('.hidden');
 
 hiddenElements.forEach((el) => observer.observe(el));
 
+//////////////////////////////////////////////////////////////
+
+const observerWelcome = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            goBackWelcome.classList.remove('visible');
+            console.log('entre true');
+        }else {
+            goBackWelcome.classList.add('visible');
+            console.log('entre false');
+        }
+    })
+})
+
+const goBackWelcome = document.querySelector('#goBackWelcome')
+
+const welcomeSection = document.querySelectorAll('#welcome-section')
+welcomeSection.forEach((el) => observerWelcome.observe(el))
+
+
+///////////////////////////////////////////////////////////////
+
 const darkMode = () => {
     document.documentElement.classList.toggle('dark-mode');
+    let lightbulbSlash = document.querySelector('#desactive-slash');
     let lightbulb = document.querySelector('#desactive');
+    lightbulbSlash.classList.toggle('dark-mode');
     lightbulb.classList.toggle('dark-mode');
 }
 
@@ -26,3 +51,7 @@ if(document.getElementsByClassName('dark-mode').length){
 }else {
     console.log('entro false');
 }
+
+
+//////////////////////////////////////////////////////////////
+
