@@ -139,6 +139,25 @@ h1 {
     font-family: var(--font-poppins);
 }
 
+#welcome-section button {
+    border: none;
+    background-color: transparent;
+}
+
+#welcome-section button i{
+    color: var(--main-gray);
+    font-size: 25px;
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+    cursor: pointer;
+}
+
+#welcome-section button i:hover{
+    transform: scale(1.2);
+}
+
+
 #welcome-section a {
     position: absolute;
     bottom: 0;
@@ -185,7 +204,7 @@ h1 {
 }
 
 #technologies-section {
-    height: 220vh;
+    height: 210vh;
     background-image: var(--main-linearwhite);
 }
 
@@ -216,8 +235,6 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
 }
 
-.technologies span:nth-child(1) {
-}
 
 .technologies span:nth-child(2) {
     transition-delay: 200ms;
@@ -496,7 +513,21 @@ footer p {
     margin-right: 50px;
 }
 
-@media only screen and (max-width: 1150px) {
+html.dark-mode {
+    filter: invert(100%);
+}
+
+html.dark-mode img, 
+html.dark-mode .technologies .nivel,
+html.dark-mode #contact,
+html.dark-mode #welcome-section,
+html.dark-mode footer {
+    filter: invert(100%);
+}
+
+
+
+@media only screen and (max-width: 1180px) {
 
     .media-icons {
         width: 80%;
@@ -588,6 +619,7 @@ footer p {
 
 @media only screen and (max-width: 400px) {
 
+
     #navbar a {
         font-size: 11px;
     }
@@ -608,10 +640,13 @@ footer p {
         font-size: 15px;
     }
 
+    #technologies-section {
+        height: 260vh;
+    }
+
     #projects h2 {
         margin: 2rem auto;
         font-size: 20px;
-        border-bottom: 1px solid;
         line-height: 25px;
     }
 
