@@ -203,14 +203,10 @@ h1 {
     right: 5vw;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    outline: 1px solid var(--main-gray);
-    outline-offset: 6.5px;
-    border-radius: 5px;
 }
 
 #welcome-section button i.dark-mode{
     color: var(--main-lightgray);
-    outline: 1px solid var(--main-lightgray);
 }
 
 #welcome-section button div.dark-mode {
