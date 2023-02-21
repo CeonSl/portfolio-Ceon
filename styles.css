@@ -674,6 +674,10 @@ html.dark-mode footer {
         transform: scale(.8);
     }
 
+    #technologies-section {
+        height: 260vh;
+    }
+
     
     #contact h2 {
         font-size: 35px;
@@ -727,9 +731,6 @@ html.dark-mode footer {
         font-size: 15px;
     }
 
-    #technologies-section {
-        height: 260vh;
-    }
 
     #projects h2 {
         margin: 2rem auto;
