@@ -506,6 +506,19 @@ footer p {
 
 
 @media only screen and (max-width: 800px) {
+
+    #navbar p {
+        padding-left: 1.5rem;
+    }
+
+    li i {
+        margin-left: .5rem;
+    }
+    
+    li a {
+        padding-left: 0;
+    }
+
     #contact h2 {
         font-size: 35px;
         color: var(--main-gray);
@@ -523,6 +536,21 @@ footer p {
 
 @media only screen and (max-width: 600px) {
 
+    #navbar {
+        height: 100px;
+    }
+
+    #navbar ul {
+        align-items: center;
+    }
+
+    #navbar li i {
+        margin: 0;
+        padding: 0;
+        transform: scale(.8);
+    }
+
+    
     #contact h2 {
         font-size: 35px;
     }
@@ -557,7 +585,6 @@ footer p {
     #navbar a {
         font-size: 11px;
     }
-
 
     #navbar ul {
         margin: 0;
