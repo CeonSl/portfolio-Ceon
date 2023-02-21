@@ -151,6 +151,20 @@ h1 {
     top: 15vh;
     right: 5vw;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+#welcome-section button div.dark-mode {
+    width: 34px;
+    height: 4.5px;
+    background-color: var(--main-gray);
+    border: 1px solid var(--main-darkgray);
+    position: absolute;
+    top: 9.5px;
+    right: -8.5px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
 }
 
 #welcome-section button i:hover{
@@ -206,6 +220,7 @@ h1 {
 #technologies-section {
     height: 210vh;
     background-image: var(--main-linearwhite);
+    color: var(--main-darkgray);
 }
 
 #technologies-section h2 {
