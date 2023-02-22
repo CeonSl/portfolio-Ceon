@@ -131,7 +131,7 @@ li button {
     transition: all .2s ease-in-out;
 }
 
-.languages-bar span{
+.languages-bar span {
     display: flex;
     justify-content: space-around;
     padding: 10px 20px;
@@ -727,6 +727,22 @@ html.dark-mode footer {
         transform: scale(.8);
     }
 
+    .languages-bar {
+        width: 150px;
+        height: 100px;
+        top: 65px;
+        right: 25px;
+    }
+
+    .languages-bar span {
+        font-size: 13px;
+    }
+
+
+    .languages-bar span img {
+        width: 20px;
+    }
+
     #technologies-section {
         height: 260vh;
     }
@@ -780,15 +796,23 @@ html.dark-mode footer {
         font-size: 30px;
     }
 
+    .languages-bar {
+        top: 65px;
+        right: 10px;
+    }
+
     #welcome-section h4 {
         font-size: 15px;
     }
 
+    #technologies-section h2 {
+        font-size: 30px;
+    }
 
     #projects h2 {
         margin: 2rem auto;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 30px;
+        line-height: 30px;
     }
 
 
