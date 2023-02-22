@@ -5,15 +5,15 @@
         "contact": "Contact"
     },
     "welcome-section": {
-        "title-welcome": "¡ Hey, I'm Carlos !",
+        "title-welcome": "Hey, I'm Carlos !",
         "profile": "Web Developer"
     },
     "technologies-section": {
         "title-technologies": "Technologies",
         "levels": {
-            "Basic": "Basic",
-            "Intermediate": "Intermediate",
-            "Advanced": "Advanced"
+            "basic": "Basic",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced"
         }
     },
     "projects-section": {

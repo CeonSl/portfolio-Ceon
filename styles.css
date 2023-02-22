@@ -127,17 +127,17 @@ li button {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
     padding: 5px;
+    cursor: default;
     transition: all .2s ease-in-out;
 }
 
-.languages-bar span {
+.languages-bar span{
     display: flex;
     justify-content: space-around;
     padding: 10px 20px;
     align-items: center;
     height: 50%;
     color: var(--main-darkgray);
-    cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
@@ -148,15 +148,24 @@ li button {
 
 .languages-bar span img {
     width: 30px;
+    margin-right: 35px;
 }
 
 .languages-bar span:nth-child(1) {
     border-bottom: var(--main-darkgray) solid 1px;
 }
 
+.languages-bar div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
 .open-bar {
     opacity: 1;
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 #goBackWelcome {
@@ -247,7 +256,7 @@ h1 {
     color: var(--main-gray);
     font-size: 25px;
     position: absolute;
-    top: 15vh;
+    top: 18vh;
     right: 5vw;
     cursor: pointer;
     transition: all .5s ease-in-out;

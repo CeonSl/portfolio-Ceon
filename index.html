@@ -25,9 +25,9 @@
                 <li><a href="#contact" data-section="navbar-data" data-value="contact">Contáctame</a></li>
                 <li><button onclick="openConfBar()"><i class="fas fa-cog"></i></button></li>
             </ul>
-            <div class="languages-bar">
-                <span> <img src="https://cdn-icons-png.flaticon.com/512/8281/8281549.png" alt=""> Español</span>
-                <span> <img src="https://cdn-icons-png.flaticon.com/512/321/321260.png" alt=""> English</span>
+            <div class="languages-bar" id="flags">
+                <span data-language="en" class="flags"> <div><img src="https://cdn-icons-png.flaticon.com/512/8281/8281549.png" alt="flag-usa"> English</div></span>
+                <span data-language="es" class="flags"> <div><img src="https://cdn-icons-png.flaticon.com/512/321/321260.png" alt="flag-spain" > Español</div></span>
             </div>
         </nav>
     </header>
@@ -63,7 +63,7 @@
                         <p>HTML</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="advanced">AVANZADO</div>
+                        data-subvalue="advanced">AVANZADO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
@@ -71,7 +71,7 @@
                         <p>CSS</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="intermediate">INTERMEDIO</div>
+                        data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
@@ -79,14 +79,14 @@
                         <p>JavaScript</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="intermediate">INTERMEDIO</div>
+                        data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png" alt="">
                         <p>TypeScript</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels" data-sub-value="basic">
+                    <div class="nivel" data-section="technologies-section" data-value="levels" data-subvalue="basic">
                         BÁSICO</div>
                 </span>
                 <span class="hidden">
@@ -95,7 +95,7 @@
                         <p>React</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="intermediate">INTERMEDIO</div>
+                        data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
@@ -103,7 +103,7 @@
                         <p>PHP</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="advanced">AVANZADO</div>
+                        data-subvalue="advanced">AVANZADO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
@@ -111,7 +111,7 @@
                         <p>LARAVEL</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="intermediate">INTERMEDIO</div>
+                        data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
@@ -119,7 +119,7 @@
                         <p>MySQL</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="advanced">AVANZADO</div>
+                        data-subvalue="advanced">AVANZADO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
@@ -127,7 +127,7 @@
                         <p>Git</p>
                     </div>
                     <div class="nivel" data-section="technologies-section" data-value="levels"
-                        data-sub-value="advanced">AVANZADO</div>
+                        data-subvalue="advanced">AVANZADO</div>
                 </span>
             </div>
         </section>
@@ -139,7 +139,7 @@
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" />
                     <p class="text-code" data-section="projects-section" data-value="projects"
-                        data-sub-value="survey-form">
+                        data-subvalue="survey-form">
                         <span class="code"><</span>
                                 Formulario de encuesta
                                 <span class="code">/></span>
@@ -150,7 +150,7 @@
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" />
                     <p class="text-code" data-section="projects-section" data-value="projects"
-                        data-sub-value="tribute-page">
+                        data-subvalue="tribute-page">
                         <span class="code">
                             < </span>
                                 <!-- Tribute Page -->
@@ -162,7 +162,7 @@
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" />
                     <p class="text-code" data-section="projects-section" data-value="projects"
-                        data-sub-value="technical-doc-page">
+                        data-subvalue="technical-doc-page">
                         <span class="code">
                             < </span>
                                 <!-- JavaScript Calculator -->
@@ -174,7 +174,7 @@
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" />
                     <p class="text-code" data-section="projects-section" data-value="projects"
-                        data-sub-value="product-landing-page">
+                        data-subvalue="product-landing-page">
                         <span class="code">
                             < </span>
                                 <!-- Map Data Across the Globe -->
@@ -186,7 +186,7 @@
                     <img class="project-image"
                         src="https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-HD.png" />
                     <p class="text-code" data-section="projects-section" data-value="projects"
-                        data-sub-value="to-be-created">
+                        data-subvalue="to-be-created">
                         <span class="code">
                             < </span>
                                 Por crear...
@@ -197,7 +197,7 @@
                     <img class="project-image"
                         src="https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-HD.png" />
                     <p class="text-code" data-section="projects-section" data-value="projects"
-                        data-sub-value="to-be-created">
+                        data-subvalue="to-be-created">
                         <span class="code">
                             < </span>
                                 Por crear...
@@ -223,10 +223,10 @@
                 <a href="#" target=_blank>
                     <span><i class="fab fa-twitter"></i> Twitter</span>
                 </a>
-                <a href="#" target=_blank data-section="contact-section" data-value="social-medias" data-sub-value="email">
+                <a href="#" target=_blank data-section="contact-section" data-value="social-medias" data-subvalue="email">
                     <span><i class="fas fa-at"></i> Mándame un correo</span>
                 </a>
-                <a href="#" target=_blank data-section="contact-section" data-value="social-medias" data-sub-value="call-me">
+                <a href="#" target=_blank data-section="contact-section" data-value="social-medias" data-subvalue="call-me">
                     <span><i class="fas fa-mobile-alt"></i>Llámame</span>
                 </a>
             </div>
