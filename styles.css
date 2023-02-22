@@ -695,6 +695,15 @@ html.dark-mode footer {
 
 @media only screen and (max-width: 1180px) {
 
+
+    .technologies span:nth-child(odd) {
+        transform: translateX(0);
+    }
+    
+    .technologies span:nth-child(even) {
+        transform: translateX(0);
+    }
+
     .media-icons {
         width: 80%;
         height: 12%;
