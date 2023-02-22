@@ -129,7 +129,9 @@ li button {
     padding: 5px;
     cursor: default;
     transition: all .2s ease-in-out;
+    animation: openBar .5s ease 1;
 }
+
 
 .languages-bar span {
     display: flex;
@@ -166,6 +168,25 @@ li button {
     display: initial;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    animation: openBar .5s ease 1;
+}
+
+@keyframes openBar {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.close {
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: all .2s ease;
 }
 
 #goBackWelcome {
@@ -334,7 +355,7 @@ h1 {
 }
 
 #technologies-section h2 {
-    padding: 5rem 0;
+    padding: 4rem 0;
     font-size: 60px;
     display: flex;
     justify-content: center;
@@ -356,10 +377,17 @@ h1 {
     padding: 15px;
     margin: 0 4rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
 }
 
+.technologies span:nth-child(odd) {
+    transform: translateX(-12rem);
+}
+
+.technologies span:nth-child(even) {
+    transform: translateX(12rem);
+}
 
 .technologies span:nth-child(2) {
     transition-delay: 200ms;
@@ -367,7 +395,6 @@ h1 {
 
 .technologies span:nth-child(3) {
     transition-delay: 400ms;
-
 }
 
 .technologies span:nth-child(4) {
