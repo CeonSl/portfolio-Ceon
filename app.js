@@ -55,3 +55,8 @@ if(document.getElementsByClassName('dark-mode').length){
 
 //////////////////////////////////////////////////////////////
 
+const openConfBar = () => {
+    let conf = document.querySelector('.fa-cog')
+    let languages = document.querySelector('.languages-bar');
+    languages.classList.toggle('open-bar')
+}

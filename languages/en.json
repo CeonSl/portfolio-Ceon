@@ -1,0 +1,42 @@
+{
+    "navbar-data": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "welcome-section": {
+        "title-welcome": "¡ Hey, I'm Carlos !",
+        "profile": "Web Developer"
+    },
+    "technologies-section": {
+        "title-technologies": "Technologies",
+        "levels": {
+            "Basic": "Basic",
+            "Intermediate": "Intermediate",
+            "Advanced": "Advanced"
+        }
+    },
+    "projects-section": {
+        "title-projects": "Some of my projects",
+        "projects": {
+            "survey-form": "<span class='code'><</span>Survey form<span class='code'>/></span>",
+            "tribute-page": "<span class='code'><</span>Tribute page<span class='code'>/></span>",
+            "technical-doc-page": "<span class='code'><</span>Technical documentation page<span class='code'>/></span>",
+            "product-landing-page": "<span class='code'><</span>Product landing page<span class='code'>/></span>",
+            "to-be-created": "<span class='code'><</span>To be created...<span class='code'>/></span>"
+        },
+        "projects-button": "Show all <i class='fas fa-chevron-right'></i>"
+    },
+    "contact-section": {
+        "title-contact": "Let's work together...",
+        "text-contact": "What do you do to concentrate when programming?",
+        "social-medias": {
+            "email": "Send me an email",
+            "call-me": "Call me"
+        }
+    },
+    "footer-section": {
+        "info": "**This is just a fake portfolio. All the projects and contact details given are not real.",
+        "created-by": "© Created by Ceon"
+    }
+}

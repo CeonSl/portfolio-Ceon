@@ -1,0 +1,42 @@
+{
+    "navbar-data": {
+        "about": "Sobre mi",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "welcome-section": {
+        "title-welcome": "¡ Hola, soy Carlos !",
+        "profile": "Desarrollador web"
+    },
+    "technologies-section": {
+        "title-technologies": "Tecnologías",
+        "levels": {
+            "basic": "Básico",
+            "intermediate": "Intermedio",
+            "advanced": "Avanzado"
+        }
+    },
+    "projects-section": {
+        "title-projects": "Algunos de mis proyectos",
+        "projects": {
+            "survey-form": "<span class='code'><</span>Formulario de encuesta<span class='code'>/></span>",
+            "tribute-page": "<span class='code'><</span>Página de tributo<span class='code'>/></span>",
+            "technical-doc-page": "<span class='code'><</span>Página de documentación técnica<span class='code'>/></span>",
+            "product-landing-page": "<span class='code'><</span>Página de productos<span class='code'>/></span>",
+            "to-be-created": "<span class='code'><</span>Por crear...<span class='code'>/></span>"
+        },
+        "projects-button": "Mostrar todos <i class='fas fa-chevron-right'></i>"
+    },
+    "contact-section": {
+        "title-contact": "Trabajemos juntos...",
+        "text-contact": "¿Qué haces para concentrarte a la hora de programar?",
+        "social-medias": {
+            "email": "<span><i class='fas fa-at'></i> Mándame un correo",
+            "call-me": "<span><i class='fas fa-mobile-alt'></i> Llámame"
+        }
+    },
+    "footer-section": {
+        "info": "**Esto es solo un portfolio falso. Todo los proyectos y detalles de contacto dados no son reales.",
+        "created-by": "© Creado por Ceon"
+    }
+}

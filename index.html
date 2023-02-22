@@ -18,14 +18,17 @@
             <p><i class="fas fa-code"></i></p>
             <ul>
                 <!-- <li><a href="#welcome-section">About</a></li> -->
-                <li><a href="#welcome-section">Sobre mi</a></li>
+                <li><a href="#welcome-section" data-section="navbar-data" data-value="about">Sobre mi</a></li>
                 <!-- <li><a href="#projects">Work</a></li> -->
-                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#projects" data-section="navbar-data" data-value="projects">Proyectos</a></li>
                 <!-- <li><a href="#contact">Contact</a></li> -->
-                <li><a href="#contact">Contáctame</a></li>
-                <li><i class="fas fa-cog"></i></li>
+                <li><a href="#contact" data-section="navbar-data" data-value="contact">Contáctame</a></li>
+                <li><button onclick="openConfBar()"><i class="fas fa-cog"></i></button></li>
             </ul>
-
+            <div class="languages-bar">
+                <span> <img src="https://cdn-icons-png.flaticon.com/512/8281/8281549.png" alt=""> Español</span>
+                <span> <img src="https://cdn-icons-png.flaticon.com/512/321/321260.png" alt=""> English</span>
+            </div>
         </nav>
     </header>
     <main>
@@ -38,98 +41,106 @@
                     <i class="fas fa-lightbulb" id="desactive">
                         <div id="desactive-slash"></div>
                     </i>
-                    
+
                 </button>
             </div>
             <div class="hidden">
                 <!-- <h1>Hey I am Carlos</h1>
                 <h4>a web developer</h4> -->
-                <h1>¡ Hola, soy Carlos !</h1>
-                <h4>Desarrollador web</h4>
+                <h1 data-section="welcome-section" data-value="title-welcome">¡ Hola, soy Carlos !</h1>
+                <h4 data-section="welcome-section" data-value="profile">Desarrollador web</h4>
             </div>
             <div>
                 <a href="#technologies-section"><i class="fas fa-chevron-down"></i></a>
             </div>
         </section>
         <section id="technologies-section">
-            <h2 class="hidden">Tecnologías</h2>
+            <h2 class="hidden" data-section="technologies-section" data-value="title-technologies">Tecnologías</h2>
             <div class="technologies">
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-html5"></i>
                         <p>HTML</p>
                     </div>
-                    <div class="nivel">AVANZADO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="advanced">AVANZADO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-css3-alt"></i>
                         <p>CSS</p>
                     </div>
-                    <div class="nivel">INTERMEDIO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-js-square"></i>
                         <p>JavaScript</p>
                     </div>
-                    <div class="nivel">INTERMEDIO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png" alt="">
                         <p>TypeScript</p>
                     </div>
-                    <div class="nivel">BÁSICO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels" data-sub-value="basic">
+                        BÁSICO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-react"></i>
                         <p>React</p>
                     </div>
-                    <div class="nivel">INTERMEDIO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-php"></i>
                         <p>PHP</p>
                     </div>
-                    <div class="nivel">AVANZADO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="advanced">AVANZADO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-laravel"></i>
                         <p>LARAVEL</p>
                     </div>
-                    <div class="nivel">INTERMEDIO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968521.png" alt="">
                         <p>MySQL</p>
                     </div>
-                    <div class="nivel">AVANZADO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="advanced">AVANZADO</div>
                 </span>
                 <span class="hidden">
                     <div class="icon-name">
                         <i class="fab fa-github"></i>
                         <p>Git</p>
                     </div>
-                    <div class="nivel">AVANZADO</div>
+                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                        data-sub-value="advanced">AVANZADO</div>
                 </span>
             </div>
         </section>
         <section id="projects">
             <!-- <h2>Some of my projects</h2> -->
-            <h2>Algunos de mis proyectos</h2>
+            <h2 data-section="projects-section" data-value="title-projects">Algunos de mis proyectos</h2>
             <div class="cards-projects">
                 <a class="project-tile  hidden">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" />
-                    <p class="text-code">
-                        <span class="code">
-                            < </span>
-                                <!-- Random Quote Machine -->
+                    <p class="text-code" data-section="projects-section" data-value="projects"
+                        data-sub-value="survey-form">
+                        <span class="code"><</span>
                                 Formulario de encuesta
                                 <span class="code">/></span>
                     </p>
@@ -138,7 +149,8 @@
                 <a class="project-tile  hidden">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" />
-                    <p class="text-code">
+                    <p class="text-code" data-section="projects-section" data-value="projects"
+                        data-sub-value="tribute-page">
                         <span class="code">
                             < </span>
                                 <!-- Tribute Page -->
@@ -149,7 +161,8 @@
                 <a class="project-tile  hidden">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" />
-                    <p class="text-code">
+                    <p class="text-code" data-section="projects-section" data-value="projects"
+                        data-sub-value="technical-doc-page">
                         <span class="code">
                             < </span>
                                 <!-- JavaScript Calculator -->
@@ -160,7 +173,8 @@
                 <a class="project-tile  hidden">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" />
-                    <p class="text-code">
+                    <p class="text-code" data-section="projects-section" data-value="projects"
+                        data-sub-value="product-landing-page">
                         <span class="code">
                             < </span>
                                 <!-- Map Data Across the Globe -->
@@ -171,7 +185,8 @@
                 <a class="project-tile  hidden">
                     <img class="project-image"
                         src="https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-HD.png" />
-                    <p class="text-code">
+                    <p class="text-code" data-section="projects-section" data-value="projects"
+                        data-sub-value="to-be-created">
                         <span class="code">
                             < </span>
                                 Por crear...
@@ -181,7 +196,8 @@
                 <a class="project-tile  hidden">
                     <img class="project-image"
                         src="https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-HD.png" />
-                    <p class="text-code">
+                    <p class="text-code" data-section="projects-section" data-value="projects"
+                        data-sub-value="to-be-created">
                         <span class="code">
                             < </span>
                                 Por crear...
@@ -190,13 +206,13 @@
                 </a>
             </div>
             <!-- <button class="button-projects">Show all <i class="fas fa-chevron-right"></i></button> -->
-            <button class="button-projects">Mostrar todos <i class="fas fa-chevron-right"></i></button>
+            <button class="button-projects" data-section="projects-section" data-value="projects-button">Mostrar todos <i class="fas fa-chevron-right"></i></button>
         </section>
         <section id="contact">
             <!-- <h2>Let's work together...</h2>
             <p>How do you take your coffee?</p> -->
-            <h2>Trabajemos juntos...</h2>
-            <p>¿Qué haces para concentrarte a la hora de programar?</p>
+            <h2 data-section="contact-section" data-value="title-contact">Trabajemos juntos...</h2>
+            <p data-section="contact-section" data-value="text-contact">¿Qué haces para concentrarte a la hora de programar?</p>
             <div class="media-icons">
                 <a href="#" target=_blank>
                     <span><i class="fab fa-facebook-square"></i> Facebook</span>
@@ -207,10 +223,10 @@
                 <a href="#" target=_blank>
                     <span><i class="fab fa-twitter"></i> Twitter</span>
                 </a>
-                <a href="#" target=_blank>
+                <a href="#" target=_blank data-section="contact-section" data-value="social-medias" data-sub-value="email">
                     <span><i class="fas fa-at"></i> Mándame un correo</span>
                 </a>
-                <a href="#" target=_blank>
+                <a href="#" target=_blank data-section="contact-section" data-value="social-medias" data-sub-value="call-me">
                     <span><i class="fas fa-mobile-alt"></i>Llámame</span>
                 </a>
             </div>
@@ -219,8 +235,8 @@
     <footer>
         <!-- <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
         <span>© Created for freeCodeCamp </span> -->
-        <p>**Esto es solo un portfolio falso. Todo los proyectos y detalles de contacto dados no son reales.</p>
-        <span>© Creado por Ceon </span>
+        <p data-section="footer-section" data-value="info">**Esto es solo un portfolio falso. Todo los proyectos y detalles de contacto dados no son reales.</p>
+        <span data-section="footer-section" data-value="created-by">© Creado por Ceon </span>
     </footer>
 </body>
 
