@@ -122,8 +122,8 @@ li button {
     width: 200px;
     height: 100px;
     right: 45px;
-    background-color: var(--main-gray);
     top: 55px;
+    background-color: var(--main-gray);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
     padding: 5px;
@@ -329,7 +329,6 @@ h1 {
 }
 
 #technologies-section {
-    height: 210vh;
     background-image: var(--main-linearwhite);
     color: var(--main-darkgray);
 }

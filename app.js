@@ -63,8 +63,6 @@ const openConfBar = () => {
 
 //////////////////////////////////////////////////////////////
 
-
-
 const flagsElement = document.getElementById('flags');
 
 const textsToChange = document.querySelectorAll('[data-section]')
@@ -89,3 +87,6 @@ const changeLanguage = async (language) => {
 flagsElement.addEventListener('click', (e) => {
     changeLanguage(e.target.parentElement.dataset.language);
 })
+
+//////////////////////////////////////////////////////////////
+
