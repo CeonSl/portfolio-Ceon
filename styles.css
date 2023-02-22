@@ -117,7 +117,7 @@ li button {
 }
 
 .languages-bar {
-    opacity: 0;
+    display: none;
     position: absolute;
     width: 200px;
     height: 100px;
@@ -163,7 +163,7 @@ li button {
 }
 
 .open-bar {
-    opacity: 1;
+    display: initial;
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
