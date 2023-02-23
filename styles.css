@@ -766,6 +766,12 @@ html.dark-mode footer {
         transform: scale(.8);
     }
 
+    #goBackWelcome {
+        right: 30px;
+        bottom: 150px;
+    }
+    
+
     .languages-bar {
         width: 150px;
         height: 100px;
@@ -781,11 +787,6 @@ html.dark-mode footer {
     .languages-bar span img {
         width: 20px;
     }
-
-    #technologies-section {
-        height: 260vh;
-    }
-
 
     #contact h2 {
         font-size: 35px;
@@ -808,7 +809,7 @@ html.dark-mode footer {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 100px;
+        height: 140px;
     }
 
     footer p {
@@ -842,6 +843,10 @@ html.dark-mode footer {
 
     #welcome-section h4 {
         font-size: 15px;
+    }
+
+    #welcome-section a {
+        left: calc(50vw - 35px);
     }
 
     #technologies-section h2 {
