@@ -36,7 +36,7 @@
         }
     },
     "footer-section": {
-        "info": "**This is just a fake portfolio. All the projects and contact details given are not real.",
-        "created-by": "© Created by Ceon"
+        "info": "",
+        "created-by": "© 2023 Ceon"
     }
 }
