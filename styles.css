@@ -32,9 +32,19 @@ html {
     box-sizing: border-box;
 }
 
-*::active, *::focus {
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+a:visited,
+a:active {
     outline: none;
-    background-color: transparent;
 }
 
 /* Animaciones para el scroll de la pagina */
@@ -70,6 +80,7 @@ li a:hover,
 li i:hover {
     transform: scale(1.15);
     transition: all 0.2s ease;
+    background-color: transparent;
 }
 
 #navbar ul {
@@ -151,6 +162,7 @@ li button {
 .languages-bar span:hover {
     opacity: .7;
     transition: all .2s ease-in-out;
+    background-color: transparent;
 }
 
 .languages-bar span img {
@@ -682,29 +694,16 @@ html.dark-mode footer {
     filter: invert(100%);
 }
 
-
-@media (prefers-color-scheme: dark) {
-    html.dark-mode {
-        filter: invert(100%);
-    }
-
-    html.dark-mode img,
-    html.dark-mode .technologies .nivel,
-    html.dark-mode #contact,
-    html.dark-mode #welcome-section,
-    html.dark-mode footer {
-        filter: invert(100%);
-    }
-
-}
-
 @media only screen and (max-width: 1180px) {
 
+    .technologies span {
+        margin-bottom: 2.5rem;
+    }
 
     .technologies span:nth-child(odd) {
         transform: translateX(0);
     }
-    
+
     .technologies span:nth-child(even) {
         transform: translateX(0);
     }
