@@ -32,6 +32,11 @@ html {
     box-sizing: border-box;
 }
 
+*::active, *::focus {
+    outline: none;
+    background-color: transparent;
+}
+
 /* Animaciones para el scroll de la pagina */
 
 .hidden {
