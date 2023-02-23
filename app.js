@@ -73,7 +73,7 @@ const cerrarConfBar = () => {
 }
 
 window.addEventListener("click", e => {
-    if(e.target != conf && e.target != languages && e.target != flags) {
+    if(e.target != conf && e.target != languages ) {
         cerrarConfBar()
     }
 })
@@ -103,7 +103,15 @@ const changeLanguage = async (language) => {
 }
 
 flagsElement.addEventListener('click', (e) => {
-    changeLanguage(e.target.parentElement.parentElement.dataset.language);
+    let language = e.target.parentElement.parentElement.dataset.language;
+    let languageParent = e.target.parentElement.dataset.language;
+    if(language != undefined){
+        changeLanguage(language);
+    }else if(languageParent != undefined){
+        changeLanguage(languageParent);
+    }else {
+        changeLanguage(e.target.dataset.language);
+    }
 })
 
 //////////////////////////////////////////////////////////////

@@ -152,7 +152,7 @@ li button {
 
 .languages-bar span {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
     height: 50%;
@@ -169,7 +169,7 @@ li button {
 }
 
 .languages-bar span img {
-    width: 30px;
+    width: 40px;
     margin-right: 35px;
 }
 
@@ -184,7 +184,7 @@ li button {
     width: 100%;
 }
 
-.languages-bar div p{
+.languages-bar div p {
     padding: 0;
 }
 
@@ -283,6 +283,8 @@ h1 {
     color: var(--main-white);
 }
 
+
+
 #welcome-section h4 {
     color: var(--main-red);
     font-style: italic;
@@ -291,6 +293,7 @@ h1 {
     letter-spacing: 2px;
     font-family: var(--font-poppins);
 }
+
 
 #welcome-section button {
     border: none;
@@ -775,7 +778,7 @@ html.dark-mode footer {
     #welcome-section a {
         left: calc(50vw - 30px);
     }
-    
+
 
     .languages-bar {
         width: 150px;
