@@ -157,6 +157,7 @@ li button {
     height: 50%;
     color: var(--main-darkgray);
     transition: all .2s ease-in-out;
+    z-index: 15;
 }
 
 .languages-bar span:hover {
@@ -179,6 +180,10 @@ li button {
     justify-content: start;
     align-items: center;
     width: 100%;
+}
+
+.languages-bar div p{
+    padding: 0;
 }
 
 .open-bar {
@@ -769,6 +774,10 @@ html.dark-mode footer {
     #goBackWelcome {
         right: 30px;
         bottom: 150px;
+    }
+
+    #welcome-section a {
+        left: calc(50vw - 30px);
     }
     
 
