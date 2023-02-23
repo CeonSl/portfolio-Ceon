@@ -93,6 +93,7 @@ const changeLanguage = async (language) => {
         const value = textToChange.dataset.value
         const subvalue = textToChange.dataset.subvalue
 
+        // condicional dependiendo de la etiqueta, por si tiene 3 dataset
         if (subvalue) {
             textToChange.innerHTML = texts[section][value][subvalue]
         } else {

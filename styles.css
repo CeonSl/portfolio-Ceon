@@ -123,6 +123,7 @@ li i {
 li button {
     border: none;
     cursor: inherit;
+    background-color: transparent;
 }
 
 #navbar p {
@@ -158,6 +159,7 @@ li button {
     color: var(--main-darkgray);
     transition: all .2s ease-in-out;
     z-index: 15;
+    cursor: pointer;
 }
 
 .languages-bar span:hover {
@@ -388,6 +390,7 @@ h1 {
     color: var(--main-gray);
     display: grid;
     justify-content: center;
+    padding-bottom: 4rem;
 }
 
 .technologies span {
@@ -430,17 +433,17 @@ h1 {
 }
 
 .technologies span:nth-child(7) {
-    transition-delay: 1000ms;
+    transition-delay: 800ms;
 
 }
 
 .technologies span:nth-child(8) {
-    transition-delay: 1200ms;
+    transition-delay: 800ms;
 
 }
 
 .technologies span:nth-child(9) {
-    transition-delay: 1400ms;
+    transition-delay: 800ms;
 
 }
 
@@ -532,13 +535,6 @@ h1 {
 
 }
 
-.project-tile:hover {
-    transform: scale(1.1);
-    transform: translateX(10px);
-    transform: translateY(-10px);
-    transition: all 0.15s ease-in-out;
-}
-
 .text-code {
     padding: 20px 0;
     font-size: 20px;
@@ -628,7 +624,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid var(--main-red);
+    border-bottom: 1.5px solid var(--main-red);
 }
 
 #contact h2 {
@@ -650,7 +646,7 @@ i {
     color: var(--main-white);
     font-size: 25px;
     width: 65%;
-    height: 12%;
+    height: 14%;
 }
 
 .media-icons span {
