@@ -794,7 +794,9 @@ html.dark-mode footer {
 
     .languages-bar span img {
         width: 20px;
+        margin-right: 15px;
     }
+
 
     #contact h2 {
         font-size: 35px;
