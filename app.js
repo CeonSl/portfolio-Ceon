@@ -79,6 +79,7 @@ window.addEventListener("click", e => {
 
 //////////////Using navbar responsive
 
+let navbar = document.querySelector('#navbar') 
 let barsButton = document.querySelector('#navbar-responsive-bars')
 let navbarResponsive = document.querySelector('.navbar-responsive')
 let lightbulb = document.querySelector(".lightbulb")
@@ -103,7 +104,7 @@ const closeNavBarResponsive = () => {
 }
 
 window.addEventListener("click", e => {
-    if (e.target != iconBars && e.target != navbarResponsive && e.target != confResponsive) {
+    if (e.target != iconBars && e.target != navbarResponsive && e.target != confResponsive && e.target != navbar) {
         closeNavBarResponsive()
     }
 })
