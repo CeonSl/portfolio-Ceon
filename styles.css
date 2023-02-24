@@ -810,7 +810,7 @@ html.dark-mode .text-code:hover .code {
 
     .languages-bar {
         right: 33vw;
-        top: 32vh;
+        top: 28vh;
     }
     
 
@@ -884,8 +884,6 @@ html.dark-mode .text-code:hover .code {
     .languages-bar {
         width: 150px;
         height: 100px;
-        top: 65px;
-        right: 25px;
     }
 
     .languages-bar span {
@@ -946,8 +944,7 @@ html.dark-mode .text-code:hover .code {
     }
 
     .languages-bar {
-        top: 65px;
-        right: 10px;
+        right: 26vw;
     }
 
     #welcome-section h4 {
