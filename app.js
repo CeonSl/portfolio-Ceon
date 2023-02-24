@@ -46,23 +46,20 @@ const darkMode = () => {
 
 
 let iconLightBulb = document.createElement('i')
-if (document.getElementsByClassName('dark-mode').length) {
-    console.log('entro true');
-} else {
-    console.log('entro false');
-}
+
 
 
 //////////////////////////////////////////////////////////////
 let languages = document.querySelector('.languages-bar');
-let conf  = document.querySelector('#conf')
+let conf = document.querySelector('#conf')
 let flags = document.querySelector('.flags')
 
 const openConfBar = () => {
-    if(languages.style.display == "initial") {
+    if (languages.style.display == "initial") {
         cerrarConfBar()
+    } else {
+        languages.style.display = "initial"
     }
-    languages.style.display = "initial"
 };
 const cerrarConfBar = () => {
     languages.classList.add("close")
@@ -72,11 +69,36 @@ const cerrarConfBar = () => {
     }, 200)
 }
 
-window.addEventListener("click", e => {
-    if(e.target != conf && e.target != languages ) {
-        cerrarConfBar()
+// window.addEventListener("click", e => {
+//     if (e.target != conf && e.target != languages) {
+//         cerrarConfBar()
+//         console.log(e.target);
+//     }
+// })
+
+//////////////Using navbar responsive
+
+let barsButton = document.querySelector('#navbar-responsive-bars')
+let navbarResponsive = document.querySelector('.navbar-responsive')
+let lightbulb = document.querySelector(".lightbulb")
+
+barsButton.addEventListener('click', e => {
+    if (navbarResponsive.style.display == "initial") {
+        closeNavBarResponsive()
+    } else {
+        navbarResponsive.style.display = "initial"
+        lightbulb.style.top = "35vh"
     }
 })
+
+const closeNavBarResponsive = () => {
+    navbarResponsive.classList.add("close-navbar-responsive")
+    lightbulb.style.top = "18vh"
+    setTimeout(() => {
+        navbarResponsive.classList.remove("close-navbar-responsive")
+        navbarResponsive.style.display = "none"
+    }, 400)
+}
 
 //////////////////////////////////////////////////////////////
 
@@ -105,11 +127,11 @@ const changeLanguage = async (language) => {
 flagsElement.addEventListener('click', (e) => {
     let language = e.target.parentElement.parentElement.dataset.language;
     let languageParent = e.target.parentElement.dataset.language;
-    if(language != undefined){
+    if (language != undefined) {
         changeLanguage(language);
-    }else if(languageParent != undefined){
+    } else if (languageParent != undefined) {
         changeLanguage(languageParent);
-    }else {
+    } else {
         changeLanguage(e.target.dataset.language);
     }
 })

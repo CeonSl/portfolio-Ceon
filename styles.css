@@ -133,6 +133,75 @@ li button {
     transform: scale(1.5);
 }
 
+.navbar-responsive{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-gray);
+    height: 25vh;
+    right: 0;
+    animation: navbarResponsiveAnimate .5s ease-in 1;
+    margin-top: 60px;
+    z-index: 15;
+}
+
+.navbar-responsive ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-responsive li i {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.navbar-responsive ul li {
+    margin-top: 10px;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-responsive li a {
+    font-size: 18px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+@keyframes navbarResponsiveAnimate {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.close-navbar-responsive {
+    z-index: 1;
+    animation: navbarResponsiveAnimateOpposite .5s ease-out 1;
+}
+
+@keyframes navbarResponsiveAnimateOpposite {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+#navbar #navbar-responsive-bars{
+    display: none;
+    margin-right: 2rem;
+}
+
 .languages-bar {
     display: none;
     position: absolute;
@@ -158,7 +227,7 @@ li button {
     height: 50%;
     color: var(--main-darkgray);
     transition: all .2s ease-in-out;
-    z-index: 15;
+    z-index: 20;
     cursor: pointer;
 }
 
@@ -399,7 +468,7 @@ h1 {
 }
 
 .technologies span {
-    width: 320px;
+    width: 620px;
     height: 150px;
     background-image: var(--main-lineargray);
     display: grid;
@@ -407,17 +476,17 @@ h1 {
     padding: 15px;
     margin: 0 4rem;
     border-radius: 10px;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
-    cursor: default;
+    cursor: pointer;
 }
 
 .technologies span:nth-child(odd) {
-    transform: translateX(-12rem);
+    transform: translateX(-18rem);
 }
 
 .technologies span:nth-child(even) {
-    transform: translateX(12rem);
+    transform: translateX(18rem);
 }
 
 .technologies span:nth-child(2) {
@@ -452,8 +521,6 @@ h1 {
     transition-delay: 800ms;
 
 }
-
-
 
 .technologies .icon-name,
 .technologies .nivel {
@@ -517,6 +584,8 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-image: var(--main-lineargray);
     transition: all 1s ease-in-out;
+    text-decoration: none;
+    color: var(--main-gray);
 }
 
 .project-tile:nth-child(2) {
@@ -684,9 +753,8 @@ footer {
     color: var(--main-gray);
     display: flex;
     justify-content: space-between;
-    height: 60px;
     align-items: center;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 footer p {
@@ -701,11 +769,23 @@ html.dark-mode img,
 html.dark-mode .technologies .nivel,
 html.dark-mode #contact,
 html.dark-mode #welcome-section,
-html.dark-mode footer {
+html.dark-mode footer,
+html.dark-mode .text-code:hover .code {
     filter: invert(100%);
 }
 
+@media only screen and (max-width: 1400px) {
+    .technologies span:nth-child(odd) {
+        transform: translateX(-12rem);
+    }
+    
+    .technologies span:nth-child(even) {
+        transform: translateX(12rem);
+    }
+}
+
 @media only screen and (max-width: 1180px) {
+
 
     .technologies span {
         margin-bottom: 2.5rem;
@@ -728,8 +808,30 @@ html.dark-mode footer {
 
 @media only screen and (max-width: 800px) {
 
+    .languages-bar {
+        right: 33vw;
+        top: 32vh;
+    }
+    
+
+    .technologies span {
+        width: 320px;
+    }
+
+
+    #navbar ul{
+        display: none;
+    }
+    
+
+
+    #navbar #navbar-responsive-bars {
+        display: initial;
+        cursor: pointer;
+    }
+
     #navbar p {
-        padding-left: 1.5rem;
+        padding-left: 2rem;
     }
 
     #contact h2 {
@@ -749,10 +851,6 @@ html.dark-mode footer {
 
 @media only screen and (max-width: 600px) {
 
-    #navbar p {
-        padding-left: 1.5rem;
-    }
-
     li i {
         margin-left: 0rem;
     }
@@ -761,10 +859,6 @@ html.dark-mode footer {
         font-size: 14px;
         padding: 0;
         padding-right: 15px;
-    }
-
-    #navbar {
-        height: 100px;
     }
 
     #navbar ul {
@@ -823,10 +917,8 @@ html.dark-mode footer {
     }
 
     footer {
-        flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 140px;
     }
 
     footer p {

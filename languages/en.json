@@ -31,8 +31,8 @@
         "title-contact": "Let's work together...",
         "text-contact": "What do you do to concentrate when programming?",
         "social-medias": {
-            "email": "Send me an email",
-            "call-me": "Call me"
+            "email": "<span><i class='fas fa-at'></i>Send me an email</span>",
+            "call-me": "<span><i class='fas fa-mobile-alt'></i> Call me</span>"
         }
     },
     "footer-section": {
