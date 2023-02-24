@@ -494,31 +494,31 @@ h1 {
 }
 
 .technologies span:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 }
 
 .technologies span:nth-child(4) {
-    transition-delay: 600ms;
+    transition-delay: 200ms;
 
 }
 
 .technologies span:nth-child(6) {
-    transition-delay: 800ms;
+    transition-delay: 200ms;
 
 }
 
 .technologies span:nth-child(7) {
-    transition-delay: 800ms;
+    transition-delay: 200ms;
 
 }
 
 .technologies span:nth-child(8) {
-    transition-delay: 800ms;
+    transition-delay: 200ms;
 
 }
 
 .technologies span:nth-child(9) {
-    transition-delay: 800ms;
+    transition-delay: 200ms;
 
 }
 
