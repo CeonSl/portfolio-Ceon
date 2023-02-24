@@ -878,6 +878,7 @@ html.dark-mode .text-code:hover .code {
 
     #welcome-section a {
         left: calc(50vw - 30px);
+        bottom: 10vh;
     }
 
 
