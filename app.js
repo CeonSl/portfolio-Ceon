@@ -52,6 +52,7 @@ let iconLightBulb = document.createElement('i')
 //////////////////////////////////////////////////////////////
 let languages = document.querySelector('.languages-bar');
 let conf = document.querySelector('#conf')
+let confResponsive = document.querySelector('#conf-responsive')
 let flags = document.querySelector('.flags')
 
 const openConfBar = () => {
@@ -69,12 +70,12 @@ const cerrarConfBar = () => {
     }, 200)
 }
 
-// window.addEventListener("click", e => {
-//     if (e.target != conf && e.target != languages) {
-//         cerrarConfBar()
-//         console.log(e.target);
-//     }
-// })
+window.addEventListener("click", e => {
+    if (e.target != conf && e.target != languages && e.target != confResponsive) {
+        cerrarConfBar()
+        console.log(e.target);
+    }
+})
 
 //////////////Using navbar responsive
 
