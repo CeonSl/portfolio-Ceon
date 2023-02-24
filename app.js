@@ -104,8 +104,10 @@ const closeNavBarResponsive = () => {
 }
 
 window.addEventListener("click", e => {
-    if (e.target != iconBars && e.target != navbarResponsive && e.target != confResponsive && e.target != navbar) {
+    if (e.target != iconBars && e.target != navbarResponsive && e.target != confResponsive && e.target != navbar
+        && e.target != barsButton) {
         closeNavBarResponsive()
+        console.log(e.target);
     }
 })
 
