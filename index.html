@@ -11,26 +11,23 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="app.js"></script>
 </head>
-
 <body>
     <header>
-        <nav id="navbar">
+        <nav id="navbar" class="flex">
             <p><i class="fas fa-code"></i></p>
-            <ul class="ul">
-                <!-- <li><a href="#welcome-section">About</a></li> -->
-                <li><a href="#welcome-section" data-section="navbar-data" data-value="about">Sobre mi</a></li>
-                <!-- <li><a href="#projects">Work</a></li> -->
-                <li><a href="#projects" data-section="navbar-data" data-value="projects">Proyectos</a></li>
-                <!-- <li><a href="#contact">Contact</a></li> -->
-                <li><a href="#contact" data-section="navbar-data" data-value="contact">Contáctame</a></li>
-                <li><button onclick="openConfBar()"><i id="conf" class="fas fa-language"></i></button></li>
+            <ul class="ul flex">
+                <li class="flex"><a href="#welcome-section" data-section="navbar-data" data-value="about">Sobre mi</a>
+                </li>
+                <li class="flex"><a href="#projects" data-section="navbar-data" data-value="projects">Proyectos</a></li>
+                <li class="flex"><a href="#contact" data-section="navbar-data" data-value="contact">Contáctame</a></li>
+                <li class="flex"><button onclick="openConfBar()"><i id="conf" class="fas fa-language"></i></button></li>
             </ul>
             <div class="languages-bar" id="flags">
-                <span data-language="en" class="flags">
+                <span data-language="en" class="flags flex">
                     <div id="flag"><img src="https://cdn-icons-png.flaticon.com/512/8281/8281549.png"
                             alt="flag-usa"><span>English</span></div>
                 </span>
-                <span data-language="es" class="flags">
+                <span data-language="es" class="flags flex">
                     <div id="flag"><img src="https://cdn-icons-png.flaticon.com/512/321/321260.png"
                             alt="flag-spain"><span>Español</span></div>
                 </span>
@@ -38,12 +35,9 @@
             <span id="navbar-responsive-bars"><i id="icon-bars" class="fas fa-bars"></i></span>
         </nav>
         <nav class="navbar-responsive">
-            <ul class="ul">
-                <!-- <li><a href="#welcome-section">About</a></li> -->
+            <ul class="ul flex">
                 <li><a href="#welcome-section" data-section="navbar-data" data-value="about">Sobre mi</a></li>
-                <!-- <li><a href="#projects">Work</a></li> -->
                 <li><a href="#projects" data-section="navbar-data" data-value="projects">Proyectos</a></li>
-                <!-- <li><a href="#contact">Contact</a></li> -->
                 <li><a href="#contact" data-section="navbar-data" data-value="contact">Contáctame</a></li>
                 <li><button onclick="openConfBar()"><i id="conf-responsive" class="fas fa-language"></i></button></li>
             </ul>
@@ -51,9 +45,9 @@
     </header>
     <main>
         <a href="#welcome-section" id="goBackWelcome" class="no-visible">
-            <i class="fas fa-chevron-up"></i>
+            <i class="fas fa-chevron-up flex"></i>
         </a>
-        <section id="welcome-section">
+        <section id="welcome-section" class="flex">
             <div>
                 <button onclick="darkMode()" id="lightbulb">
                     <i class="fas fa-lightbulb lightbulb" id="desactive">
@@ -63,8 +57,6 @@
                 </button>
             </div>
             <div class="hidden">
-                <!-- <h1>Hey I am Carlos</h1>
-                <h4>a web developer</h4> -->
                 <h1 data-section="welcome-section" data-value="title-welcome"> Hola, soy Carlos </h1>
                 <h4 data-section="welcome-section" data-value="profile">Desarrollador web</h4>
             </div>
@@ -73,84 +65,88 @@
             </div>
         </section>
         <section id="technologies-section">
-            <h2 class="hidden" data-section="technologies-section" data-value="title-technologies">Tecnologías</h2>
+            <h2 class="hidden flex" data-section="technologies-section" data-value="title-technologies">Tecnologías</h2>
             <div class="technologies">
                 <span class="hidden" onclick="openExpanded('HTML')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-html5"></i>
                         <p>HTML</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels" data-subvalue="advanced">
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
+                        data-subvalue="advanced">
                         AVANZADO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('CSS')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-css3-alt"></i>
                         <p>CSS</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
                         data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('JavaScript')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-js-square"></i>
                         <p>JavaScript</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
                         data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('TypeScript')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png" alt="">
                         <p>TypeScript</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels" data-subvalue="basic">
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
+                        data-subvalue="basic">
                         BÁSICO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('React')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-react"></i>
                         <p>React</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
                         data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('PHP')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-php"></i>
                         <p>PHP</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels" data-subvalue="advanced">
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
+                        data-subvalue="advanced">
                         AVANZADO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('Laravel')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-laravel"></i>
                         <p>Laravel</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels"
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
                         data-subvalue="intermediate">INTERMEDIO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('MySQL')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968521.png" alt="">
                         <p>MySQL</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels" data-subvalue="advanced">
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
+                        data-subvalue="advanced">
                         AVANZADO</div>
                 </span>
                 <span class="hidden" onclick="openExpanded('Git')">
-                    <div class="icon-name">
+                    <div class="icon-name flex">
                         <i class="fab fa-github"></i>
                         <p>Git</p>
                     </div>
-                    <div class="nivel" data-section="technologies-section" data-value="levels" data-subvalue="advanced">
+                    <div class="nivel flex" data-section="technologies-section" data-value="levels"
+                        data-subvalue="advanced">
                         AVANZADO</div>
                 </span>
             </div>
         </section>
         <section id="projects">
-            <!-- <h2>Some of my projects</h2> -->
             <h2 data-section="projects-section" data-value="title-projects">Algunos de mis proyectos</h2>
             <div class="cards-projects">
                 <a class="project-tile  hidden" href="https://survey-form-coral.vercel.app/" target="_blank">
@@ -170,7 +166,6 @@
                         data-subvalue="tribute-page">
                         <span class="code">
                             < </span>
-                                <!-- Tribute Page -->
                                 Página de tributo
                                 <span class="code">/></span>
                     </p>
@@ -181,7 +176,6 @@
                         data-subvalue="technical-doc-page">
                         <span class="code">
                             < </span>
-                                <!-- JavaScript Calculator -->
                                 Página de documentación técnica
                                 <span class="code">/></span>
                     </p>
@@ -192,7 +186,6 @@
                         data-subvalue="product-landing-page">
                         <span class="code">
                             < </span>
-                                <!-- Map Data Across the Globe -->
                                 Página de productos
                                 <span class="code">/></span>
                     </p>
@@ -220,17 +213,14 @@
                     </p>
                 </a>
             </div>
-            <!-- <button class="button-projects">Show all <i class="fas fa-chevron-right"></i></button> -->
             <button class="button-projects" data-section="projects-section" data-value="projects-button">Mostrar todos
                 <i class="fas fa-chevron-right"></i></button>
         </section>
-        <section id="contact">
-            <!-- <h2>Let's work together...</h2>
-            <p>How do you take your coffee?</p> -->
+        <section id="contact" class="flex">
             <h2 data-section="contact-section" data-value="title-contact">Trabajemos juntos...</h2>
             <p data-section="contact-section" data-value="text-contact">¿Qué haces para concentrarte a la hora de
                 programar?</p>
-            <div class="media-icons">
+            <div class="media-icons flex">
                 <a href="#" target=_blank>
                     <span><i class="fab fa-facebook-square"></i> Facebook</span>
                 </a>
@@ -251,12 +241,9 @@
             </div>
         </section>
     </main>
-    <footer>
-        <!-- <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-        <span>© Created for freeCodeCamp </span> -->
+    <footer class="flex">
         <p data-section="footer-section" data-value="info"></p>
         <span data-section="footer-section" data-value="created-by">© 2023 Ceon </span>
     </footer>
 </body>
-
 </html>

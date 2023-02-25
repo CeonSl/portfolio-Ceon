@@ -47,6 +47,10 @@ a:active {
     outline: none;
 }
 
+.flex {
+    display: flex;
+}
+
 /* Animaciones para el scroll de la pagina */
 
 .hidden {
@@ -68,12 +72,11 @@ a:active {
     width: 100%;
     position: fixed;
     background: var(--main-gray);
-    z-index: 20;
-    display: flex;
     height: 60px;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 20;
 }
 
 li a:hover,
@@ -85,13 +88,11 @@ li i:hover {
 
 #navbar ul {
     list-style-type: none;
-    display: flex;
     margin: 0 15px;
     padding-right: 0.5rem;
 }
 
 #navbar ul li {
-    display: flex;
     justify-self: center;
     align-items: center;
 }
@@ -220,7 +221,6 @@ li button {
 
 
 .languages-bar span {
-    display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
@@ -303,7 +303,6 @@ li button {
 
 #goBackWelcome i {
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5 ease-in-out;
@@ -330,7 +329,6 @@ li button {
 
 
 #welcome-section {
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -455,7 +453,6 @@ h1 {
 #technologies-section h2 {
     padding: 4rem 0;
     font-size: 60px;
-    display: flex;
     justify-content: center;
     cursor: default;
 }
@@ -479,6 +476,7 @@ h1 {
     margin-bottom: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
     cursor: pointer;
+    transition-delay: 200ms;
 }
 
 .technologies span:nth-child(odd) {
@@ -489,42 +487,9 @@ h1 {
     transform: translateX(18rem);
 }
 
-.technologies span:nth-child(2) {
-    transition-delay: 200ms;
-}
-
-.technologies span:nth-child(3) {
-    transition-delay: 200ms;
-}
-
-.technologies span:nth-child(4) {
-    transition-delay: 200ms;
-
-}
-
-.technologies span:nth-child(6) {
-    transition-delay: 200ms;
-
-}
-
-.technologies span:nth-child(7) {
-    transition-delay: 200ms;
-
-}
-
-.technologies span:nth-child(8) {
-    transition-delay: 200ms;
-
-}
-
-.technologies span:nth-child(9) {
-    transition-delay: 200ms;
-
-}
 
 .technologies .icon-name,
 .technologies .nivel {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -622,7 +587,7 @@ h1 {
     color: transparent;
 }
 
-.text-code:hover .code {
+.text-code:hover .code, .project-tile:hover .code {
     color: var(--main-red);
     transition: all 0.25s ease-in-out;
 }
@@ -697,7 +662,6 @@ i {
 #contact {
     height: calc(100vh - 60px);
     background-image: var(--main-lineargray);
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -719,7 +683,6 @@ i {
 }
 
 .media-icons {
-    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     color: var(--main-white);
@@ -751,7 +714,6 @@ i {
 footer {
     background-image: var(--main-lineargray);
     color: var(--main-gray);
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
