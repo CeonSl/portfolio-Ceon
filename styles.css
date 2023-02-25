@@ -402,7 +402,7 @@ h1 {
 
 #welcome-section a {
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
     margin-bottom: 2rem;
     left: calc(50vw - 45px);
     border: 1px solid transparent;
