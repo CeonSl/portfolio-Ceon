@@ -22,8 +22,8 @@ const loadChevron = (chevron) => {
 }
 const observerWelcomeOneElement = new IntersectionObserver(loadChevron, {
     root: null,
-    rootMargin: '100px 0px 0px 0px',
-    threshold: 1.0
+    rootMargin: '0px 0px 0px 0px',
+    threshold: .5
 })
 const welcomeSectionOneElement = document.querySelector('#welcome-section')
 observerWelcomeOneElement.observe(welcomeSectionOneElement)
